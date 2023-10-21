@@ -1,0 +1,22 @@
+<h1>User List</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let user of Users">
+        <tr>
+            <td>{{user.name}}</td>
+            <td>{{user.city}}</td>
+            <td>{{user.status}}</td>
+        </tr>
+    </tbody>
+</table>
+<footer class="footer">
+    <div class="container">
+        <span>All rights reserved &copy; 2023</span>
+    </div>
+</footer>

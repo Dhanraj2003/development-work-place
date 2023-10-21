@@ -1,0 +1,39 @@
+
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-6 offset-md-3">
+                <div class="container text-center">
+                    <img src="../../../assets/logo.jpg" alt="logo" width="90px" height="70px" style="margin-right: 18px;">
+                </div>
+                <h1 class="text-center">Registration Form</h1>
+
+                <!-- {{user | json}} -->
+                <form (ngSubmit)="formfunction()">
+                    <mat-form-field class="full-width"  appearance="outline">
+                        <mat-label>Name</mat-label>
+                        <input [(ngModel)]="user.name" name="name" matInput placeholder="Enter Your Name" required> 
+                        <mat-hint style="color: red;">*</mat-hint>  
+                      </mat-form-field>
+
+                    <mat-form-field class="full-width"  appearance="outline">
+                        <mat-label>City</mat-label>
+                        <input [(ngModel)]="user.city" name="city" matInput placeholder="Enter Your City" required> 
+                        <mat-hint style="color: red;">*</mat-hint>  
+                      </mat-form-field>
+
+                    <mat-form-field class="full-width"  appearance="outline">
+                        <mat-label>Status</mat-label>
+                        <input [(ngModel)]="user.status" name="status"  matInput placeholder="Enter Your Status" required>
+                        <mat-hint style="color: red;">*</mat-hint>   
+                      </mat-form-field>
+
+                      <div class="container text-center">
+                        <button mat-raised-button color="primary">Register</button>
+                        <button mat-raised-button color="accent" style="margin-left: 20px;">Clear</button>
+                      </div>
+                </form>
+            </div>
+        </div>   
+    </div>
+</div>
